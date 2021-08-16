@@ -1,0 +1,866 @@
+//----------------------------------------------------------------------------
+// BotProfile.db
+// Author: Michael S. Booth, Turtle Rock Studios (www.turtlerockstudios.com)
+//
+// This database defines bot "personalities". 
+// Feel free to edit it and define your own bots.
+//
+
+
+//----------------------------------------------------------------------------
+
+//
+// All profiles begin with this data and overwrite their own
+//
+Default
+	Skill = 50
+	Aggression = 50
+	ReactionTime = 0.3
+	AttackDelay = 0
+	Teamwork = 75
+	WeaponPreference = none
+	Cost = 0
+	Difficulty = NORMAL
+	VoicePitch = 100
+	Skin = 0
+End
+
+//----------------------------------------------------------------------------
+
+//
+// These templates inherit from Default and override with their values
+// The name of the template defines a type that is used by individual bot profiles
+//
+
+// weapon preference templates
+Template Rifle
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template RifleT
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = galil
+	WeaponPreference = famas
+	WeaponPreference = mp5
+End
+
+Template Punch
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template PunchT
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Sniper
+	WeaponPreference = awp
+	WeaponPreference = sg550
+	WeaponPreference = g3sg1
+	WeaponPreference = scout
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Power
+	WeaponPreference = m249
+	WeaponPreference = xm1014
+	WeaponPreference = m3
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Shotgun
+	WeaponPreference = xm1014
+	WeaponPreference = m3
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Shotgun21
+	WeaponPreference = m3
+	WeaponPreference = xm1014
+	WeaponPreference = mp5
+End
+
+Template Deagle
+	WeaponPreference = deagle
+	WeaponPreference = usp
+	WeaponPreference = glock18
+	WeaponPreference = mp5
+End
+
+Template Shield
+	WeaponPreference = shield
+	WeaponPreference = m4a1			// in case shield is disallowed
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Spray
+	WeaponPreference = p90
+	WeaponPreference = tmp
+	WeaponPreference = mac10
+	WeaponPreference = mp5
+End
+
+// skill templates
+Template Elite
+	Skill = 100
+	Aggression = 100
+	ReactionTime = 0.2
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 85
+End
+
+Template Expert
+	Skill = 90
+	Aggression = 90
+	ReactionTime = 0.2
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 88
+End
+
+Template VeryHard
+	Skill = 80
+	Aggression = 80
+	ReactionTime = 0.25
+	Cost = 3
+	Difficulty = HARD
+	VoicePitch = 92
+End
+
+Template Hard
+	Skill = 75
+	Aggression = 75
+	ReactionTime = 0.25
+	Cost = 3
+	Difficulty = HARD
+	VoicePitch = 94
+End
+
+Template Tough
+	Skill = 60
+	Aggression = 60
+	ReactionTime = 0.3
+	AttackDelay = 0.35
+	Cost = 2
+	Difficulty = NORMAL+HARD
+	VoicePitch = 96
+End
+
+Template Normal
+	Skill = 50
+	Aggression = 50
+	ReactionTime = 0.4
+	AttackDelay = 0.7
+	Cost = 2
+	Difficulty = NORMAL
+End
+
+Template Fair
+	Skill = 25
+	Aggression = 30
+	ReactionTime = 0.4
+	AttackDelay = 1.0
+	Cost = 1
+	Difficulty = EASY+NORMAL
+	VoicePitch = 105
+End
+
+Template Easy
+	Skill = 0
+	Aggression = 20
+	ReactionTime = 0.5
+	AttackDelay = 1.5
+	Cost = 1
+	Difficulty = EASY
+	VoicePitch = 110
+End
+
+//----------------------------------------------------------------------------
+//
+// These are the individual bot profiles, which inherit first from 
+// Default and then the specified Template(s), in order
+//
+
+Elite+Rifle Hego6pbIu_JIeKapb
+	Skin = 1
+	VoicePitch = 95
+End
+
+Elite+Spray ne4aJIbHbIu_4auHuK
+	Skin = 2
+	VoicePitch = 105
+End
+
+Elite+Shotgun21 4epHbIu_JIeKToP
+	Skin = 4
+	VoicePitch = 84
+End
+
+Elite+Punch >>>BullDoZzeR
+	Skin = 4
+	VoicePitch = 75
+End
+
+Elite+Power ..N1Tr0n..
+	Skin = 2
+	VoicePitch = 80
+End
+
+Elite+PunchT >PartiZan<
+	Skin = 4
+	VoicePitch = 90
+End
+
+Elite+Rifle Deg_omMOPO3
+	Skin = 2
+	VoicePitch = 98
+End
+
+Elite+RifleT Xy>I<e_JIoJIKu
+	Skin = 1
+	VoicePitch = 96
+End
+
+Elite+Sniper 4yKoTCKuu_CHauneP
+	Skin = 3
+	VoicePitch = 105
+End
+
+Elite+RifleT -papique-
+	Skin = 1
+	VoicePitch = 84
+End
+
+Elite+PunchT CyKaHaX
+	Skin = 4
+	VoicePitch = 86
+End
+
+Elite+Deagle =geCePT=
+	Skin = 4
+	VoicePitch = 82
+End
+
+Elite+RifleT PROVOCATOR
+	Skin = 1
+	VoicePitch = 70
+End
+
+
+//----------------------------------------
+
+Expert+RifleT BuHToBKuH
+	VoicePitch = 85
+End
+
+Expert+Rifle KoH4eHbIu_ypog
+	VoicePitch = 100
+End
+
+Expert+Punch Ha4aJIbHuK_KapTbI
+	VoicePitch = 95
+End
+
+Expert+Sniper My>I<u4oK_CJIoHoBu4oK
+	Cost = 5
+	VoicePitch = 115
+End
+
+Expert+Shotgun MygaK_C_Py>I<beM
+	VoicePitch = 87
+End
+
+Expert+Rifle KpoBaBbIu_neKaPb
+	VoicePitch = 91
+End
+
+Expert+Rifle go6pbIu_6o6puK
+	VoicePitch = 82
+End
+
+Expert He3gopoBbIu_ncuX
+	VoicePitch = 112
+End
+
+Expert+PunchT KoT_B_PoMaLLIKaX
+	VoicePitch = 99
+End
+
+Expert+Rifle DiGGeR
+	VoicePitch = 100
+End
+
+//----------------------------------------
+
+VeryHard+Power OmmonbIPeHbIu_ynbIPb
+	Skin = 1
+	VoicePitch = 110
+End
+
+VeryHard+Sniper -MAM6A-
+	Skin = 3
+	VoicePitch = 93
+End
+
+VeryHard+Rifle Ha4aJIbHuK_KapTbI
+	Skin = 2
+	VoicePitch = 100
+End
+
+VeryHard+RifleT KeHToyKJIag4uK
+	Skin = 4
+	VoicePitch = 86
+End
+
+
+//----------------------------------------
+
+Hard+Rifle 3JIo6HbIu_yXaPb
+	Skin = 1
+	VoicePitch = 95
+End
+
+Hard+RifleT Be>I<JIuBbIu_JIoCb
+	Skin = 2
+	VoicePitch = 90
+End
+
+Hard+Spray Kyu_>I<eJIe3HbIu
+	Skin = 4
+	VoicePitch = 102
+End
+
+Hard+Shotgun nanuK
+	Skin = 1
+	VoicePitch = 98
+End
+
+Hard+RifleT -ZerG-
+	Skin = 2
+	VoicePitch = 96
+End
+
+Hard+Punch MYX0M0P
+	Skin = 4
+	VoicePitch = 103
+End
+
+Hard+PunchT neC_MoXHoPbIJIbIu
+	Skin = 1
+	VoicePitch = 105
+End
+
+Hard+Rifle AKTuBHbIu_roMeC
+	Skin = 2
+	VoicePitch = 130
+End
+
+Hard+Rifle -PerfoRaToR->
+	Skin = 4
+	VoicePitch = 84
+End
+
+Hard+PunchT 3BePCKuu_4uToP
+	Skin = 1
+	VoicePitch = 90
+End
+
+Hard+Rifle V!C
+	Skin = 2
+	VoicePitch = 98
+End
+
+Hard+Sniper g00dDayToD!e
+	Skin = 3
+	VoicePitch = 110
+End
+
+Hard+Spray TelepuzO
+	Skin = 4
+	VoicePitch = 103
+End
+
+Hard+Rifle poccoMaxa
+	Skin = 2
+	VoicePitch = 125
+End
+
+//----------------------------------------
+
+Tough+Sniper K!llogr4mm
+	Skin = 3
+	VoicePitch = 120
+End
+
+Tough+Rifle npanop_KoHeB
+	Skin = 1
+	VoicePitch = 75
+End
+
+Tough+Rifle MyXa
+	Skin = 2
+	VoicePitch = 104
+End
+
+Tough+RifleT Davilka
+	Skin = 4
+	VoicePitch = 98
+End
+
+Tough geM6eJIb
+	Skin = 1
+	VoicePitch = 100
+End
+
+Tough+Rifle CKyKo>I<eHbIu_E>I<
+	Skin = 2
+	VoicePitch = 102
+End
+
+Tough+Shotgun oTMoPo>I<eHbIu_MuHTau
+	Skin = 4
+	VoicePitch = 95
+End
+
+Tough+Rifle uHCneKToP_>I<onuH
+	Skin = 1
+	VoicePitch = 95
+End
+
+Tough+RifleT y4uTeJIb_XuMuu
+	Skin = 2
+	VoicePitch = 110
+End
+
+Tough+Rifle KaPa6aC_PaCKOJI6aC
+	Skin = 4
+	VoicePitch = 112
+End
+
+Tough -GRoMoZeKA-
+	Skin = 1
+	VoicePitch = 90
+End
+
+Tough+Rifle Morda
+	Skin = 2
+	VoicePitch = 115
+End
+
+Tough+RifleT KyJIbHbIu_PyJIe3
+	Skin = 4
+	VoicePitch = 107
+End
+
+Tough+Rifle CTaPuK_OTMoPo3OK
+	Skin = 2
+	VoicePitch = 102
+End
+
+Tough KoT_MaTPOCKuH
+	Skin = 1
+	VoicePitch = 98
+End
+
+Tough+Rifle CTaJIbHbIe_TanKu
+	Skin = 2
+	VoicePitch = 100
+End
+
+Tough+RifleT CJIoHeHoK
+	Skin = 4
+	VoicePitch = 95
+End
+
+Tough+Rifle **3y6P**
+	Skin = 1
+	VoicePitch = 86
+End
+
+Tough+RifleT ronHuK
+	Skin = 2
+	VoicePitch = 100
+End
+
+Tough+Rifle -=y6uBaToP=-
+	Skin = 4
+	VoicePitch = 95
+End
+
+//----------------------------------------
+
+Normal+Rifle BJIaCTeJIuH_KoHTPbI
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal+PunchT MaKaPoHHuK
+	Skin = 2
+	VoicePitch = 90
+End
+
+Normal CaguCT-3aTeuHuK
+	Skin = 3
+	VoicePitch = 100
+End
+
+Normal SHiBZDiK
+	Skin = 4
+	VoicePitch = 107
+End
+
+Normal+Shield KeKS-PerDoLetto
+	Skin = 1
+	VoicePitch = 104
+End
+
+Normal Co6aKa-PeKC
+	Skin = 2
+	VoicePitch = 110
+End
+
+Normal Schtandartenfuhrer
+	Skin = 3
+	VoicePitch = 95
+End
+
+Normal NecroManZer
+	Skin = 4
+	VoicePitch = 112
+End
+
+Normal Mekhano!d
+	Skin = 1
+	VoicePitch = 111
+End
+
+Normal+Sniper **BE45t**
+	Skin = 3
+	VoicePitch = 115
+End
+
+Normal gollum
+	Skin = 4
+	VoicePitch = 112
+End
+
+Normal noCMoTPuM_KTo_4Mo
+	Skin = 1
+	VoicePitch = 96
+End
+
+Normal onaCHbIu_Tun
+	Skin = 2
+	VoicePitch = 98
+End
+
+Normal 9HykoBu4
+	Skin = 4
+	VoicePitch = 110
+End
+
+Normal ZeliBoba
+	Skin = 1
+	VoicePitch = 95
+End
+
+Normal+RifleT -=AMnyTaToP=-
+	Skin = 2
+	VoicePitch = 100
+End
+
+Normal **Natashka**
+	Skin = 4
+	VoicePitch = 135
+End
+
+Normal 10weHko
+	Skin = 3
+	VoicePitch = 98
+End
+
+Normal+Deagle neraJIb
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal Kampers_in_Pampers
+	Skin = 2
+	VoicePitch = 115
+End
+
+Normal MopCKou_CBuH
+	Skin = 3
+	VoicePitch = 110
+End
+
+Normal CTenHou_OXoTHuK
+	Skin = 4
+	VoicePitch = 92
+End
+
+//----------------------------------------
+
+Fair >>--ARROW-->
+	VoicePitch = 110
+End
+
+Fair naHKu_B_TaHKe
+	VoicePitch = 100
+End
+
+Fair Ky4Ka
+	VoicePitch = 99
+End
+
+Fair -ZLOY-
+	VoicePitch = 120
+End
+
+Fair -##.NeO.##-
+	VoicePitch = 111
+End
+
+Fair Vasily_Pupkin
+	VoicePitch = 98
+End
+
+Fair Ethan
+	VoicePitch = 112
+End
+
+Fair DeD_LogopeD
+	VoicePitch = 90
+End
+
+Fair ZveroBoy
+	VoicePitch = 120
+End
+
+Fair gpo6ogyH_C_6ogyHa
+	VoicePitch = 118
+End
+
+Fair OTCTou_CJIuBo4HbIu
+	VoicePitch = 116
+End
+
+Fair KoBaPHbIu_roMuK
+	VoicePitch = 114
+End
+
+Fair Ca6JIe3y6a9I_>I<y4Ka
+	VoicePitch = 110
+End
+
+Fair He>I<Ha9I_JIaMKa
+	VoicePitch = 125
+End
+
+Fair 4un_u_geuJI
+	VoicePitch = 150
+End
+
+Fair uBaH_KpuBoPyKoB
+	VoicePitch = 113
+End
+
+Fair 3JIa9I_4eLLIKa
+	VoicePitch = 114
+End
+
+Fair ***TEPMuHATOP***
+	VoicePitch = 115
+End
+
+Fair CTPaHHbIu_CTpaHHuK
+	VoicePitch = 100
+End
+
+Fair roBHogaB4uK
+	VoicePitch = 102
+End
+
+Fair BoB4uK
+	VoicePitch = 98
+End
+
+Fair CaM_gyPaK
+	VoicePitch = 96
+End
+
+Fair TuTbKa
+	VoicePitch = 132
+End
+
+//----------------------------------------
+
+Easy KoHb_B_CanoraX
+	VoicePitch = 100
+End
+
+Easy 9I_4eLLIKa-o6op>I<oTeCb!
+	VoicePitch = 110
+End
+
+Easy Ky6uK_Bpy6uK
+	VoicePitch = 120
+End
+
+Easy Bop_B_3anoe
+	VoicePitch = 99
+End
+
+Easy+spray KJIaCCHbIe_CuCbKu
+	VoicePitch = 126
+End
+
+Easy XOPb_C_gy6uHou
+	VoicePitch = 125
+End
+
+Easy CTaJIbHbIe_9IuKu
+	VoicePitch = 110
+End
+
+Easy pardoN-Zaperdon
+	VoicePitch = 100
+End
+
+Easy npocmo_HanpocTo
+	VoicePitch = 112
+End
+
+Easy *He4dSH00TeR*
+	VoicePitch = 121
+End
+
+Easy nypronoHoCHuK
+	VoicePitch = 99
+End
+
+Easy He_y6uBauTe_Cpa3y!
+	VoicePitch = 119
+End
+
+Easy MaLLIa-KaKaLLIa
+	VoicePitch = 128
+End
+
+Easy 3a6er_ge6uJIoB
+	VoicePitch = 117
+End
+
+Easy 3agHenpoXog4uK
+	VoicePitch = 116
+End
+
+Easy yKyPbILLI
+	VoicePitch = 115
+End
+
+Easy KPaCHbIu_KPoKoguJI
+	VoicePitch = 114
+End
+
+Easy CMeJIbIu_g9ITeJI
+	VoicePitch = 112
+End
+
+Easy 4y4yHgpuK
+	VoicePitch = 111
+End
+
+Easy Po3oBa9I_nonKa
+	VoicePitch = 132
+End
+
+Easy PagoCTHa9I_CoCKA
+	VoicePitch = 109
+End
+
+Easy 6yKa-nyKa
+	VoicePitch = 108
+End
+
+Easy -Sup3rMeg4K!11eR-
+	VoicePitch = 122
+End
+
+Easy ~LOLA-COLA~
+	VoicePitch = 120
+End
+
+Easy BeCeJIa9I_JIoJIKa
+	VoicePitch = 135
+End
+
+Easy 6ogpbIu_goguK
+	VoicePitch = 92
+End
+
+Easy BeJIuKuu_HaCoCbHuK
+	VoicePitch = 100
+End
+
+Easy KoHKpeTHa9I_TynKa
+	VoicePitch = 102
+End
+
+Easy OTCTou_CJIuBo4HbIu
+	VoicePitch = 104
+End
+
+Easy HeadKilla--o0->
+	VoicePitch = 108
+End
+
+Easy XogoK_3a_nuBoM
+	VoicePitch = 95
+End
+
+Easy Tynou_KypCaHT
+	VoicePitch = 75
+End
+
+Easy C4aCTJIuBbIu_JIyneHb
+	VoicePitch = 120
+End
+
+Easy HeonbITHbIu_nana
+	VoicePitch = 112
+End
+
+Easy 3BepCKuu_4uToP
+	VoicePitch = 99
+End
+
+Easy CuBbIu_gyPeHb
+	VoicePitch = 110
+End
+
+Easy OT5TOYnik
+	VoicePitch = 130
+End

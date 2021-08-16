@@ -1,0 +1,15 @@
+// overview description file for aim_headshot.bsp
+// autor VeSuViuS
+
+global 
+{
+	ZOOM	2.83
+	ORIGIN	-4.43 223.34 -193
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/aim_headshot.bmp"
+	HEIGHT	-193
+}

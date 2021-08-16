@@ -1,0 +1,15 @@
+// overview description file for awp_india.bsp
+// autor VeSuViuS
+
+global 
+{
+	ZOOM	2.65
+	ORIGIN	0 	-127.92	-320
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/awp_india.bmp"
+	HEIGHT	-320
+}

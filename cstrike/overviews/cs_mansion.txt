@@ -1,0 +1,15 @@
+// overview description file for cs_mansion.bsp
+// autor VeSuViuS
+
+global 
+{
+	ZOOM	3.52
+	ORIGIN	252 -344 -136
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/cs_mansion.bmp"
+	HEIGHT	-136
+}

@@ -1,0 +1,15 @@
+// overview description file for de_abaddon.bsp
+// autor VeSuViuS
+
+global 
+{
+	ZOOM	1.90
+	ORIGIN	190 -384 -516
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/de_abaddon.bmp"
+	HEIGHT	-516
+}

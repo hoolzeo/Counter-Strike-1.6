@@ -1,0 +1,15 @@
+// overview description file for $2000$.bsp
+// autor VeSuViuS
+
+global 
+{
+	ZOOM	4.00
+	ORIGIN	-772 762.50	-181
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/$2000$.bmp"
+	HEIGHT	-181
+}

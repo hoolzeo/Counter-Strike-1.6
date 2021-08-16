@@ -1,0 +1,15 @@
+// overview description file for awp_dust.bsp
+// autor VeSuViuS
+
+global 
+{
+	ZOOM	2.23
+	ORIGIN	144 240	-208
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/awp_dust.bmp"
+	HEIGHT	-208
+}

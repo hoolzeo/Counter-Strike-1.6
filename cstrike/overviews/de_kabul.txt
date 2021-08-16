@@ -1,0 +1,15 @@
+// overview description file for de_kabul.bsp
+// autor VeSuViuS
+
+global 
+{
+	ZOOM	1.66
+	ORIGIN	752 	-672	-1
+	ROTATED	1
+}
+
+layer 
+{
+	IMAGE	"overviews/de_kabul.bmp"
+	HEIGHT	-1
+}

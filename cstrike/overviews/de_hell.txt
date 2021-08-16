@@ -1,0 +1,15 @@
+// overview description file for de_hell.bsp
+// autor VeSuViuS
+
+global 
+{
+	ZOOM	1.35
+	ORIGIN	-8 	-84	-336
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/de_hell.bmp"
+	HEIGHT	-336
+}

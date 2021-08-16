@@ -1,0 +1,15 @@
+// overview description file for de_dust2_2x2.bsp
+// autor VeSuViuS
+
+global 
+{
+	ZOOM	1.75
+	ORIGIN	576 	1056	-320
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/de_dust2_2x2.bmp"
+	HEIGHT	-320
+}

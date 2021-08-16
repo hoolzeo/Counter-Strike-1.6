@@ -1,0 +1,15 @@
+// overview description file for fy_pool_day.bsp
+// autor VeSuViuS
+
+global 
+{
+	ZOOM	4.88
+	ORIGIN	-82 515	-182
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/fy_pool_day.bmp"
+	HEIGHT	-182
+}
