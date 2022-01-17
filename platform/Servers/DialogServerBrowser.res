@@ -58,7 +58,7 @@
 		"enabled"		"1"
 		"URLText"		"https://cs16planet.ru/servers/"
 		"tabPosition"		"0"
-		"labelText"		"Открыть список всех серверов (3000+)"
+		"labelText"		"Открыть список всех серверов (2300+)"
 		"textAlignment"		"east"	
 		"dulltext"		"1"
 		"zpos"	"1"	

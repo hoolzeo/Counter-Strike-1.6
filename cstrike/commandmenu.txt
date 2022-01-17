@@ -1,263 +1,146 @@
-//=============================//
-//       Меню игры CS 1.6     //
-//    Автор © hoolz, 2020    //
-//==========================//
+//============================//
+//      Меню игры CS 1.6     //
+//   Автор © hoolz, 2021    //
+//=========================//
 
-"1" "Текущая игра"
+"1" "Добавить ботов"
 {
-	"1" "#StatRaund"		"say_team /me"
-	"2" "Инф. о убийце"			"say_team /hp"
-	"3" "Сбросить счет"			"say /rs"
-
-	"4" "Информация"
+	"1" "Баланс"
 	{
-		"5" "Время сервера"			"say thetime"
-		"6" "Текущая карта"			"say currentmap"
-		"7" "Следующая карта"		"say nextmap"
-		"8" "Осталось времени"		"say timeleft"
-		"8" "Статус"		"toggleconsole;status"
+		"1" "1x1"	"bot_kick; bot_join_team any; bot_quota 1"
+		"2" "2x2"	"bot_kick; bot_join_team any; bot_quota 3"
+		"3" "4x4"	"bot_kick; bot_join_team any; bot_quota 7"
+		"4" "5x5"	"bot_kick; bot_join_team any; bot_quota 9"
+		"5" "6x6"	"bot_kick; bot_join_team any; bot_quota 11"
+		"6" "7x7"	"bot_kick; bot_join_team any; bot_quota 13"
+		"7" "8x8"	"bot_kick; bot_join_team any; bot_quota 15"
+		"8" "9x9"	"bot_kick; bot_join_team any; bot_quota 17"
+		"9" "10x10"	"bot_kick; bot_join_team any; bot_quota 19"
 	}
-	
-	"5" "Статистика"
+	"2" "Всех за T"
 	{
-		"1" "Стати-ка карты"			"say_team /statsme"
-		"2" "#StatServer"		"say_team /rankstats"
-	 	"3" "ТОП 15 игроков"			"say_team /top15"
-	 	"4" "#StatRank"		"say_team /rank"
-	 	"5" "#StatPlayers"	"say_team /stats"
+		"1" "1x2"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team t; bot_quota 2"
+		"2" "1x3"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team t; bot_quota 3"
+		"3" "1x4"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team t; bot_quota 4"
+		"5" "1x5"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team t; bot_quota 5"
+		"6" "1x8"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team t; bot_quota 8"
+		"7" "1x12"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team t; bot_quota 12"
 	}
-	
-	"6" "Админ меню"
+	"3" "Всех за CT"
 	{
-		"1" "Открыть меню"	"amxmodmenu"
-		"2" "Убить / толкнуть"	"amx_slapmenu"
-		"3" "Кикнуть"	"amx_kickmenu"
-		"4" "Забанить"	"amx_banmenu"
+		"1" "1x2"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team ct; bot_quota 2"
+		"2" "1x3"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team ct; bot_quota 3"
+		"3" "1x4"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team ct; bot_quota 4"
+		"5" "1x5"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team ct; bot_quota 5"
+		"6" "1x8"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team ct; bot_quota 8"
+		"7" "1x12"	"mp_autoteambalance 0; mp_limitteams 0; bot_kick; bot_join_team ct; bot_quota 12"
 	}
+	"4" "+1 бот"	"bot_add"
+	"5" "+1 за CT"	"bot_add_ct"
+	"6" "+1 за Т"	"bot_add_t"
 }
 
-"2" "Настройки"
+"2" "Меню ботов"
 {
-	"1" "Чат"
+	"1" "Сложность"
 	{
-		"1" "Вкл/выкл чат"
-		{
-			"1" "Включить чат"	"hud_saytext_time 1"
-			"2" "Отключить чат"	"hud_saytext_time 0"
-		}
-		"2" "Цвет"
-		{
-			"1" "Белый"			"exec settings/chat/white.cfg"
-			"2" "Жёлтый"		"exec settings/chat/yellow.cfg"
-			"3" "Оранжевый"		"exec settings/chat/orange.cfg"
-			"4" "Красный"		"exec settings/chat/red.cfg"
-			"5" "Серый"			"exec settings/chat/gray.cfg"
-			"6" "Голубой"		"exec settings/chat/lightblue.cfg"
-			"7" "Зелёный"		"exec settings/chat/green.cfg"
-			"8" "Розовый"		"exec settings/chat/pink.cfg"
-		}
-		"3" "Голосовой чат"
-		{
-			"1" "Включить"	"voice_enable 1;voice_modenable 1"
-			"2" "Отключить"	"voice_modenable 0"
-		}
+		"1" "Легкая"	"bot_difficulty 0; bot_kick; bot_add"
+		"2" "Средняя"	"bot_difficulty 1; bot_kick; bot_add"
+		"3" "Тяжелая"	"bot_difficulty 2; bot_kick; bot_add"
+		"4" "Очень тяжёлая"	"bot_difficulty 3; bot_kick; bot_add"
 	}
-	"2" "Прицел"
+	"2" "Оружие"
 	{
-		"1" "Цвет"
-		{
-			"1" "Белый"			"exec settings/crosshair/white.cfg"
-			"2" "Жёлтый"		"exec settings/crosshair/yellow.cfg"
-			"3" "Оранжевый"		"exec settings/crosshair/orange.cfg"
-			"4" "Красный"		"exec settings/crosshair/red.cfg"
-			"5" "Серый"			"exec settings/crosshair/gray.cfg"
-			"6" "Голубой"		"exec settings/crosshair/lightblue.cfg"
-			"7" "Зелёный"		"exec settings/crosshair/green.cfg"
-			"8" "Розовый"		"exec settings/crosshair/pink.cfg"
-			"9" "Случайный"		"adjust_crosshair"
-		}
-		"2" "Размер"
-		{
-			"1" "Авто"	"cl_crosshair_size auto"
-			"2" "Маленький"	"cl_crosshair_size small"
-			"3" "Средний"	"cl_crosshair_size medium"
-			"4" "Большой"	"cl_crosshair_size large"
-		}
-		"3" "Прозрачность"
-		{
-			"1" "Отключить"		"cl_crosshair_translucent 0"
-			"2" "Включить"		"cl_crosshair_translucent 1"
-		}
-		"4" "Динамичность"
-		{
-			"1" "Отключить"		"cl_dynamiccrosshair 0"
-			"2" "Включить"		"cl_dynamiccrosshair 1"
-		}
-	}
-	"3" "Оружие / Рука"
-	{
-		"1" "Рука с оружием"
-		{
-			"1" "Левая" "cl_righthand 0"
-			"2" "Правая" "cl_righthand 1"
-		}
-		"2" "#AutoWep"
-		{
-			"1" "Да" "_cl_autowepswitch 1"
-			"2" "Нет" "_cl_autowepswitch 0"
-		}
-		"3" "#FastSwitch"
-		{
-			"1" "Включить" "hud_fastswitch 1"
-			"2" "Выключить" "hud_fastswitch  0"
-		}
-	}
-	
-	"4" "Текстуры"
-	{
-		"1" "Качество текстур"
-		{
-			"1" "Высокое" 		"gl_texturemode GL_LINEAR_MIPMAP_LINEAR"
-			"2" "Нормальное" 	"gl_texturemode GL_LINEAR_MIPMAP_NEAREST"
-			"3" "Низкое" 		"gl_texturemode GL_NEAREST_MIPMAP_LINEAR"
-			"4" "Очень низкое" 	"gl_texturemode GL_NEAREST_MIPMAP_NEAREST"
-		}
-		"2" "HD текстуры карт"
-		{
-			"1" "Включить"		"r_detailtextures 1"
-			"2" "Отключить"		"r_detailtextures 0"
-		}
-	}
-	
-	"5" "Погода"
-	{
-		"1" "Туман"
-		{
-			"1" "Включить"		"gl_fog 1"
-			"2" "Отключить"		"gl_fog 0"
-		}
-		"2" "Дождь/Снег"
-		{
-			"2" "Мало"		"cl_weather 1"
-			"3" "Средне"		"cl_weather 2"
-			"4" "Сильно"		"cl_weather 3"
-			"4" "Отключить"		"cl_weather 0"
-		}
-	}
-	"6" "Звук"
-	{
-		"2" "Максимально" "Volume 2"
-		"3" "Громко" "volume 1.60"
-		"4" "Нормально" "volume 1.12"
-		"5" "Средне" "volume 0.9"
-		"6" "Тихо" "volume 0.3"
-		"7" "Выключить" "volume 0"
-	}
-	"7" "Радар"
-	{
-			"1" "Прозрачный" "drawradar;cl_radartype 0"
-			"2" "Непрозрачный"	"drawradar;cl_radartype 1"
-			"3" "Скрыть радар"	"hideradar"
-		}
-	"8" "Модели игроков"
-	{
-		"1" "Две (Leet, Gign)"		"cl_minmodels 1"
-		"2" "Все восемь"	"cl_minmodels 0"
-	}
-	"9" "Отображение FPS"
-	{
-		"1" "Включить"	"cl_showfps 1"
-		"2" "Выключить"	"cl_showfps 0"
-	}
-}
-
-"3" "Опции игры"
-{
-	"1" "Сменить команду" "chooseteam"
-	"2" "Сменить ник" "messagemode name"
-	"3" "Сделать скриншот"
-	{
-		"1" "Простой" "wait;wait;wait;wait;wait;snapshot;wait;;wait;wait;wait;exec settings/screenshot.cfg"
-		"2" "Таблицы игроков" "wait;wait;wait;wait;wait;+showscores;wait;wait;wait;snapshot;wait;wait;wait;wait;wait;-showscores;exec settings/screenshot.cfg"
-	}
-	"4" "Записать демо"
-	{
-		"1" "Запись" "record Demo"
-		"2" "Остановить" "stop"
-		"3" "Смотреть демо" "viewdemo Demo"
-		"4" "Ручная запись"	"messagemode record"
-	}
-	"5" "#Reconnect" "reconnect"
-}
-
-"4" "Добавить ботов"
-{
-	"1" "Количество"
-	{
-		"1" "1x1"		"bot_kick; bot_join_team any; bot_quota 1"
-		"2" "2x2"		"bot_kick; bot_join_team any; bot_quota 3"
-		"3" "4x4"		"bot_kick; bot_join_team any; bot_quota 7"
-		"4" "5x5"		"bot_kick; bot_join_team any; bot_quota 9"
-		"5" "6x6"		"bot_kick; bot_join_team any; bot_quota 11"
-		"6" "7x7"		"bot_kick; bot_join_team any; bot_quota 13"
-		"7" "8x8"		"bot_kick; bot_join_team any; bot_quota 15"
-		"8" "9x9"		"bot_kick; bot_join_team any; bot_quota 17"
-		"9" "10x10"		"bot_kick; bot_join_team any; bot_quota 19"
-	}
-	"2" "#botMax"
-	{
-		"1" "За обе команды" "bot_join_team any; bot_quota 32"
-		"2" "За T" "bot_join_team t; bot_quota 16"
-		"3" "За CT"  "bot_join_team ct; bot_quota 16"
-	}
-	"3" "#botRandom" "bot_add"
-	"4" "+ 1 бот за ..."
-	{
-		"1" "#zaCT"		"bot_add_ct"
-		"2" "Террористов"		"bot_add_t"
-	}
-}
-
-"5" "Меню ботов"
-{
-	"1" "Контроль оружия"
-	{
-		"1" "Все"			"bot_all_weapons"
-		"2" "Только ножи"		"bot_knives_only"
-		"3" "Только пистолеты" "bot_pistols_only"
-		"4" "Только снайперки"	"bot_snipers_only"
+		"1" "Всё"	"bot_all_weapons; bot_kill"
+		"2" "Только ножи"	"bot_knives_only; bot_kill"
+		"3" "Только пистолеты"	"bot_pistols_only; bot_kill"
+		"4" "Только снайперки"	"bot_snipers_only; bot_kill"
 		"5" "Щит"
 		{
-			"1" "Откл"		"bot_allow_shield 0"
-			"2" "Вкл."		"bot_allow_shield 1"
+		  "1" "Запретить"	"bot_allow_shield 0; bot_kill"
+		  "2" "Разрешить"	"bot_allow_shield 1; bot_kill"
 		}
 		"6" "Гранаты"
 		{
-			"1" "Откл."		"bot_allow_grenades 0"
-			"2" "Вкл."		"bot_allow_grenades 1"
+			"1" "Запретить"	"bot_allow_grenades 0; bot_kill"
+			"2" "Разрешить"	"bot_allow_grenades 1; bot_kill"
 		}
 	}
-	"2" "Сложность"
+	"3" "Общение"
 	{
-		"1" "Легкая" "bot_difficulty 0"
-		"2" "Средняя"	"bot_difficulty 1"
-		"3" "Тяжелая"		"bot_difficulty 2"
-		"4" "Очень тяжелая"		"bot_difficulty 3"
+		"1" "Молчат"	"bot_chatter off"
+		"2" "Только радио"	"bot_chatter radio"
+		"3" "По инфе"	"bot_chatter minimal"
+		"4" "Болтают"	"bot_chatter normal"
 	}
-	"3" "Радиопереговоры"
-	{
-		"1" "Откл."					"bot_chatter off"
-		"2" "#botRadioCommands"	"bot_chatter radio"
-		"3" "Минимальные"			"bot_chatter minimal"
-		"4" "Стандарт"				"bot_chatter normal"
-	}
-	"4" "Убить ботов"		"bot_kill"
+
+	"4" "Убить ботов"	"bot_kill"
 	"5" "Остановить ботов"
 	{
 		"1" "Вкл."	"bot_stop 1"
 		"2" "Откл."	"bot_stop 0"
 	}
-	"6" "Удалить ботов" "bot_kick"	
+	"6" "Кикнуть ботов"	"bot_kick"
 }
-
-"9" "Закрыть" "slot10"
+"5" "Рука"
+{
+	"1" "Левая"	"cl_righthand 0"
+	"2" "Правая"	"cl_righthand 1"
+}
+"6" "Прочее"
+{
+	"1" "Цвет чата"
+	{
+		"1" "Белый"	"exec commandmenu/chat/white.cfg"
+		"2" "Черный"	"exec commandmenu/chat/black.cfg"
+		"3" "Зеленый"	"exec commandmenu/chat/green.cfg"
+		"4" "Голубой"	"exec commandmenu/chat/lightblue.cfg"
+		"5" "Жёлтый"	"exec commandmenu/chat/yellow.cfg"
+		"6" "Оранжевый"	"exec commandmenu/chat/orange.cfg"
+		"7" "Красный"	"exec commandmenu/chat/red.cfg"
+		"8" "Синий"	"exec commandmenu/chat/blue.cfg"
+		"9" "Фиолетовый"	"exec commandmenu/chat/purple.cfg"
+		"10" "Стандартный"	"exec commandmenu/chat/default.cfg"
+	}
+	"2" "Цвет прицела"
+	{
+		"1" "Белый"	"exec commandmenu/crosshair/white.cfg"
+		"2" "Черный"	"exec commandmenu/crosshair/black.cfg"
+		"3" "Зелёный"	"exec commandmenu/crosshair/green.cfg"
+		"4" "Голубой"	"exec commandmenu/crosshair/lightblue.cfg"
+		"5" "Жёлтый"	"exec commandmenu/crosshair/yellow.cfg"
+		"6" "Красный"	"exec commandmenu/crosshair/red.cfg"
+		"7" "Синий"		"exec commandmenu/crosshair/blue.cfg"
+		"8" "Фиолетовый"	"exec commandmenu/crosshair/purple.cfg"
+		"10" "Случайный"	"adjust_crosshair"
+	}
+	"3" "Качество текстур"
+	{
+		"1" "Высокое"	"r_detailtextures 1; gl_texturemode GL_LINEAR_MIPMAP_LINEAR"
+		"2" "Нормальное"	"r_detailtextures 0; gl_texturemode GL_LINEAR_MIPMAP_NEAREST"
+		"3" "Низкое"	"r_detailtextures 0; gl_texturemode GL_NEAREST_MIPMAP_LINEAR"
+	}
+	"4" "Туман"
+	{
+		"1" "Включить"	"gl_fog 1"
+		"2" "Отключить"	"gl_fog 0"
+	}
+	"5" "Дождь/Снег"
+	{
+		"1" "Мало"	"cl_weather 1"
+		"2" "Средне"	"cl_weather 2"
+		"3" "Сильно"	"cl_weather 3"
+		"4" "Отключить"	"cl_weather 0"
+	}
+	"6" "Отображение FPS"
+	{
+		"1" "Включить"	"net_graph 1"
+		"2" "Выключить"	"net_graph 0"
+	}
+	"7" "Сделать скриншот"
+	{
+		"1" "Простой"	"wait;wait;wait;wait;wait;snapshot;wait;;wait;wait;wait;exec commandmenu/screenshot.cfg"
+		"2" "Таблицы игроков"	"wait;wait;wait;wait;wait;+showscores;wait;wait;wait;snapshot;wait;wait;wait;wait;wait;-showscores;exec commandmenu/screenshot.cfg"
+	}
+}
+"7" "Закрыть" "slot10"

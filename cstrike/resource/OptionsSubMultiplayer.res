@@ -127,7 +127,7 @@
 		"editable"		"1"
 		"maxchars"		"63"
 		"NumericInputOnly"		"0"
-		"unicode"		"0"
+		"unicode"		"1"
 	}
 	"Primary Color Slider"
 	{
